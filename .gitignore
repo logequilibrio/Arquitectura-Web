@@ -3,3 +3,15 @@
 ################################################################################
 
 /routes
+/propio
+/package.json
+/package-lock.json
+/obj/Debug
+/node_modules
+/NodejsWebApp1.njsproj.user
+/bin
+/ArquitecturaWebBack.sln
+/ArquitecturaWebBack.njsproj.user
+/ArquitecturaWebBack.njsproj
+/.vs
+/server.js
