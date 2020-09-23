@@ -16,6 +16,6 @@ endPoints
 GET: api/Alimento: Retornaría una lista de los alimentos existentes en la base.
 GET: api/alimento/{string}: retornaría una lista seleccionada por ID de alimentos (Para comparación nutricional).
 GET: api/alimento/id: retornía un objeto para hacer un PUT o PATCH.
-POST: api/alimento: Alta de un objeto del tipo Alimento.
+POST: api/alimento(Objeto en el boby): Alta de un objeto del tipo Alimento.
 DELETE: api/alimento/id: Eliminacion de un objeto del tipo Alimento
-PUT: api/alimneto/id&Objeto: Edición completa de todas las propiedades de un objeto del tipo Alimento
+PUT: api/alimneto/id(Objeto en el boby): Edición completa de todas las propiedades de un objeto del tipo Alimento
