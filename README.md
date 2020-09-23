@@ -18,4 +18,4 @@ GET: api/alimento/{string}: retornaría una lista seleccionada por ID de aliment
 GET: api/alimento/id: retornía un objeto para hacer un PUT o PATCH.
 POST: api/alimento(Objeto en el boby): Alta de un objeto del tipo Alimento.
 DELETE: api/alimento/id: Eliminacion de un objeto del tipo Alimento
-PUT: api/alimneto/id(Objeto en el boby): Edición completa de todas las propiedades de un objeto del tipo Alimento
+PUT: api/alimento/id(Objeto en el boby): Edición completa de todas las propiedades de un objeto del tipo Alimento
