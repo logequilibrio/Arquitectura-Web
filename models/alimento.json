@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "Nombre": "Acelga",
+    "Calorias": "13",
+    "Hidratos": "1",
+    "Proteinas": "2",
+    "Grasas": "0",
+    "Fibras": "6",
+    "Activo": "1"
+  },
+  {
+    "id": "2",
+    "Nombre": "Arroz Integral",
+    "Calorias": "357",
+    "Hidratos": "77",
+    "Proteinas": "7",
+    "Grasas": "2",
+    "Fibras": "3",
+    "Activo": "1"
+  },
+  {
+    "id": "3",
+    "Nombre": "Berenjena",
+    "Calorias": "14",
+    "Hidratos": "3",
+    "Proteinas": "1",
+    "Grasas": "0",
+    "Fibras": "2",
+    "Activo": "1"
+  }
+]

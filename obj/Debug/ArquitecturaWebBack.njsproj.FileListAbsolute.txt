@@ -1,0 +1,5 @@
+C:\Users\PC2\source\repos\NodejsWebApp1\obj\Debug\ArquitecturaWebBack.njsproj.CoreCompileInputs.cache
+C:\Users\PC2\source\repos\NodejsWebApp1\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\PC2\source\repos\logequilibrio\Arquitectura-Web\obj\Debug\ArquitecturaWebBack.njsprojAssemblyReference.cache
+C:\Users\PC2\source\repos\logequilibrio\Arquitectura-Web\obj\Debug\ArquitecturaWebBack.njsproj.CoreCompileInputs.cache
+C:\Users\PC2\source\repos\logequilibrio\Arquitectura-Web\bin\Microsoft.NodejsTools.WebRole.dll
