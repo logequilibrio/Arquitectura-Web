@@ -26,19 +26,35 @@ router.post('/', (req, res) => {
     if (Nombre, Calorias, Hidratos, Proteinas, Grasas, Fibras) {
         let mayorId = 0;
         _.each(alimentos, (alimento, i) => {
-            if (alimento.Nombre == Nombre) {
-                res.status(409).send({error:'Alimento existente en la base de datos.'})
-            } else if (parseInt(alimento.id) > mayorId) {
+            if (parseInt(alimento.id) > mayorId) {
                 mayorId = parseInt(alimento.id);
             }            
         });
-        mayorId = mayorId + 1;
-        var id = mayorId.toString();
-        var Activo = '1';
-        const nuevoAlimento = { ...req.body, id, Activo };
-        alimentos.push(nuevoAlimento);
-        console.log(nuevoAlimento);
-        res.status(201).json(alimentos);        
+        try {
+            let alimento = _.find(alimentos, (ali) => {
+                return ali.Nombre == Nombre;                
+            });
+            if (alimento.Activo == '1') {
+                res.status(409).send({ error: 'Alimento existente en la base de datos.' });
+            } else {
+                alimento.Nombre = Nombre;
+                alimento.Calorias = Calorias;
+                alimento.Hidratos = Hidratos;
+                alimento.Proteinas = Proteinas;
+                alimento.Grasas = Grasas;
+                alimento.Fibras = Fibras;
+                alimento.Activo = '1';
+                res.status(201).json(alimentos);
+            }
+        } catch (e) {
+            mayorId = mayorId + 1;
+            var id = mayorId.toString();
+            var Activo = '1';
+            const nuevoAlimento = { ...req.body, id, Activo };
+            alimentos.push(nuevoAlimento);
+            console.log(nuevoAlimento);
+            res.status(201).json(alimentos);      
+        }                  
     }    
 });
 
