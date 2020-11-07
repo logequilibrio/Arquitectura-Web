@@ -14,8 +14,14 @@ Por otro lado, la idea es que cuando la base de datos este nutrida de alimentos,
 endPoints
 
 GET: api/Alimento: Retornaría una lista de los alimentos existentes en la base.
-GET: api/alimento/{string}: retornaría una lista seleccionada por ID de alimentos (Para comparación nutricional).
-GET: api/alimento/id: retornía un objeto para hacer un PUT o PATCH.
-POST: api/alimento(Objeto en el boby): Alta de un objeto del tipo Alimento.
-DELETE: api/alimento/id: Eliminacion de un objeto del tipo Alimento
-PUT: api/alimento/id(Objeto en el boby): Edición completa de todas las propiedades de un objeto del tipo Alimento
+GET: api/alimento/QueryString: Retornaría una lista seleccionada por tipo de alimentos de alimentos.
+GET: api/alimento/id: Retornaría un objeto para hacer un PUT o PATCH.
+POST: api/alimento(Objeto en el boby): Alta de un objeto Alimento.
+DELETE: api/alimento/id: Eliminacion de un objeto Alimento
+PUT: api/alimento/id(Objeto en el boby): Edición completa de todas las propiedades de un objeto Alimento
+
+GET: api/tipoalimentos: Retornaría una lista de los tipo de alimentos existentes en la base.
+GET: api/tipoalimentos/id: Retornaría un objeto tipo de alimento para hacer un PUT o PATCH.
+POST: api/tipoalimentos(Objeto en el boby): Alta de un objeto tipo Alimento.
+DELETE: api/tipoalimentos/id: Eliminacion de un objeto tipo Alimento
+PUT: api/tipoalimentos/id(Objeto en el boby): Edición completa de todas las propiedades de un objeto tipo Alimento

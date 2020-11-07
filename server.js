@@ -18,6 +18,7 @@ serverApp.use(morgan('dev'));
 /*INICIO RUTAS(Routes)*/
 serverApp.use(require('./routes/ruta'));
 serverApp.use('/api/alimentos', require('./routes/alimento'));
+serverApp.use('/api/tipoalimentos', require('./routes/tipoAlimento'));
 
 /*INICIO DE SERVIDOR(server start)*/
 serverApp.listen(serverApp.get('port'), () => {

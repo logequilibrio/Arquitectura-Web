@@ -8,6 +8,12 @@ router.get('/', (req, res) => {
     res.json(ListaActualizada());
 });
 
+router.get('/:tipoAlimento', (req, res) => {
+    let id = req.params.tipoAlimento.substr(req.params.tipoAlimento.indexOf("=") + 1);
+    console.log(id);
+    res.status(200).json(_.where(alimentos, { idTipoAlimento: id }));
+});
+
 router.get('/:id', (req, res) => {
     const { id } = req.params;
     try {
@@ -17,8 +23,7 @@ router.get('/:id', (req, res) => {
         res.status(200).json(alimento);
     } catch (e) {
         res.status(400).send({ error: 'not found' });
-    }
-    res.json(alimentos);
+    }    
 });
 
 router.post('/', (req, res) => {
@@ -90,7 +95,8 @@ router.delete('/:id', (req, res) => {
         res.status(200).json(ListaActualizada());
     } catch (e) {
         res.status(400).send({ error: 'not found' });
-    }    
+    }
+    console.log(alimentos);
 });
 
 function ListaActualizada() {

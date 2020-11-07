@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "Nombre": "Carne Roja",
+    "Activo": "1"
+  },
+  {
+    "id": "2",
+    "Nombre": "Verdura",
+    "Activo": "1"
+  },
+  {
+    "id": "3",
+    "Nombre": "Fruta",
+    "Activo": "1"
+  },
+  {
+    "id": "4",
+    "Nombre": "Carne blanca",
+    "Activo": "1"
+  },
+  {
+    "id": "5",
+    "Nombre": "Tuberculo",
+    "Activo": "1"
+  },
+  {
+    "id": "6",
+    "Nombre": "Grano",
+    "Activo": "1"
+  }
+]
