@@ -31,10 +31,10 @@ router.post('/', (req, res) => {
         });
         try {
             let tipo = _.find(tipos, (t) => {
-                return t.Nombre == Nombre;
+                return t.Nombre.toUpperCase() == Nombre.toUpperCase();
             });
             if (tipo.Activo == '1') {
-                res.status(409).send({ error: 'Alimento existente en la base de datos.' });
+                res.status(409).send({ error: 'Tipo de alimento existente en la base de datos.' });
             } else {
                 tipo.Nombre = Nombre;                
                 alimento.Activo = '1';

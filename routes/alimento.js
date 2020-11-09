@@ -37,7 +37,7 @@ router.post('/', (req, res) => {
         });
         try {
             let alimento = _.find(alimentos, (ali) => {
-                return ali.Nombre == Nombre;                
+                return ali.Nombre.toUpperCase() == Nombre.toUpperCase();                
             });
             if (alimento.Activo == '1') {
                 res.status(409).send({ error: 'Alimento existente en la base de datos.' });
